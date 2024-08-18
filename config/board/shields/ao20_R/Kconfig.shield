@@ -1,2 +1,0 @@
-config SHIELD_AO20_R
-    def_bool $(shields_list_contains,ao20_R)
