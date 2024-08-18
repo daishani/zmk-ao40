@@ -59,7 +59,7 @@
 &kp Q      &kp F1    &kp F2    &kp F3   &kp F4
 &kp LCTRL  &kp F5    &kp F6    &kp F7   &kp F8
 &kp LSHFT  &kp F9    &kp F10   &kp F11  &kp F11
-&mo 4      &kp LGUI  &kp LALT  &kp TAB  &kp SPACE
+&mo 4      &kp LGUI  &kp LALT  &trans   &kp SPACE
             >;
         };
 
