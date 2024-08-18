@@ -57,18 +57,27 @@
         layer_2 {
             bindings = <
 &kp Q      &kp F1    &kp F2    &kp F3   &kp F4
-&kp A      &kp F5    &kp F6    &kp F7   &kp F8
+&kp LCTRL  &kp F5    &kp F6    &kp F7   &kp F8
 &kp LSHFT  &kp F9    &kp F10   &kp F11  &kp F11
-&kp LCTRL  &kp LGUI  &kp LALT  &kp TAB  &kp SPACE
+&mo 4      &kp LGUI  &kp LALT  &kp TAB  &kp SPACE
             >;
         };
 
         layer_3 {
             bindings = <
 &bt BT_SEL 0  &bt BT_SEL 1  &bt BT_SEL 2  &bt BT_SEL 3  &bt BT_SEL 4
+&none         &none         &none         &bt BT_CLR    &none
 &none         &none         &none         &none         &none
-&bootloader   &sys_reset    &bt BT_CLR    &none         &none
 &none         &none         &none         &none         &none
+            >;
+        };
+
+        layer_4 {
+            bindings = <
+&trans       &trans  &trans  &trans  &trans
+&bootloader  &trans  &trans  &trans  &trans
+&trans       &trans  &trans  &trans  &trans
+&trans       &trans  &trans  &trans  &trans
             >;
         };
     };
