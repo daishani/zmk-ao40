@@ -67,10 +67,10 @@
 
         layer_2 {
             bindings = <
-&kp Y      &kp HOME   &kp UP     &kp END   &trans
-&kp PG_UP  &kp LEFT   &kp DOWN   &kp DOWN  &kp PG_DN
-&kp N      &kp M      &kp COMMA  &kp DOT   &kp RSHFT
-&kp BSPC   &kp ENTER  &kp LALT   &kp LGUI  &kp LCTRL
+&kp Y      &kp HOME   &kp UP     &kp END    &trans
+&kp PG_UP  &kp LEFT   &kp DOWN   &kp RIGHT  &kp PG_DN
+&kp N      &kp M      &kp COMMA  &kp DOT    &kp RSHFT
+&kp BSPC   &kp ENTER  &kp LALT   &kp LGUI   &kp LCTRL
             >;
         };
 
