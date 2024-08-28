@@ -1,7 +1,7 @@
 if SHIELD_AO40_DONGLE
 
 config ZMK_KEYBOARD_NAME
-    default "ao40 Dongle"
+        default "ao40 Dongle"
 
 config ZMK_SPLIT_BLE_ROLE_CENTRAL
 	default y
