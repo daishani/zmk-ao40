@@ -5,4 +5,4 @@ config SHIELD_AO40_RIGHT
     def_bool $(shields_list_contains,ao40_right)
 
 config SHIELD_AO40_DONGLE
-	def_bool $(shields_list_contains,ao40_dongle)
+    def_bool $(shields_list_contains,ao40_dongle)
