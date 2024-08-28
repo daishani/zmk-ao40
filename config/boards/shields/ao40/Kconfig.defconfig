@@ -1,16 +1,22 @@
-if SHIELD_AO40_LEFT
+if SHIELD_AO40_DONGLE
 
 config ZMK_KEYBOARD_NAME
-    default "ao40"
+    default "ao40 Dongle"
 
-config ZMK_SPLIT_ROLE_CENTRAL
-    default y
+config ZMK_SPLIT_BLE_ROLE_CENTRAL
+	default y
+	
+config ZMK_USB
+	default y
 
 endif
 
-if SHIELD_AO40_LEFT || SHIELD_AO40_RIGHT
+if SHIELD_AO40_LEFT || SHIELD_AO40_RIGHT || SHIELD_AO40_DONGLE
 
 config ZMK_SPLIT
-    default y
+	default y
 
+config ZMK_BLE
+	default y
+	
 endif
