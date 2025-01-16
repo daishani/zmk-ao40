@@ -23,7 +23,7 @@
             bindings = <&mo>, <&kp>;
 
             #binding-cells = <2>;
-            flavor = "tap-unless-interrupted";
+            flavor = "balanced";
             require-prior-idle-ms = <150>;
             tapping-term-ms = <200>;
             retro-tap;
@@ -67,6 +67,15 @@
 &bootloader   &trans        &trans        &bt BT_CLR    &out OUT_TOG  &sys_reset  &trans  &trans  &trans  &bootloader
 &trans        &trans        &trans        &out OUT_USB  &out OUT_TOG  &trans      &trans  &trans  &trans  &trans
 &trans        &trans        &trans        &trans        &trans        &trans      &trans  &trans  &trans  &trans
+            >;
+        };
+
+        layer_4 {
+            bindings = <
+&trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans
             >;
         };
     };
