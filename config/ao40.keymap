@@ -29,6 +29,7 @@
             tapping-term-ms = <200>;
             retro-tap;
             hold-while-undecided;
+            hold-while-undecided-linger;
         };
     };
 
@@ -68,15 +69,6 @@
 &bootloader   &trans        &trans        &bt BT_CLR    &out OUT_TOG  &sys_reset  &trans  &trans  &trans  &bootloader
 &trans        &trans        &trans        &out OUT_USB  &out OUT_TOG  &trans      &trans  &trans  &trans  &trans
 &trans        &trans        &trans        &trans        &trans        &trans      &trans  &trans  &trans  &trans
-            >;
-        };
-
-        layer_4 {
-            bindings = <
-&trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans
-&trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans
-&trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans
-&trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans
             >;
         };
     };
