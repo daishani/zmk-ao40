@@ -37,6 +37,23 @@
         };
     };
 
+    combos {
+        compatible = "zmk,combos";
+
+        to2 {
+            bindings = <&tog 2>;
+            key-positions = <10 14>;
+            timeout-ms = <50>;
+            layers = <0>;
+        };
+
+        re0 {
+            bindings = <&tog 2>;
+            key-positions = <10 14>;
+            timeout-ms = <50>;
+        };
+    };
+
     keymap {
         compatible = "zmk,keymap";
 
@@ -60,7 +77,7 @@
 
         layer_2 {
             bindings = <
-&kp ESC         &mmv MOVE_UP    &mkp MB4         &mkp MB5            &tog 0    &to 2    &kp PG_DN  &kp UP    &kp PG_UP  &kp DEL
+&kp ESC         &mmv MOVE_UP    &mkp MB4         &mkp MB5            &trans    &trans   &kp PG_DN  &kp UP    &kp PG_UP  &kp DEL
 &mmv MOVE_LEFT  &mmv MOVE_DOWN  &mmv MOVE_RIGHT  &msc SCRL_UP        &trans    &kp END  &kp LEFT   &kp DOWN  &kp RIGHT  &kp HOME
 &kp LSHFT       &mkp MB3        &mkp MB2         &msc SCRL_DOWN      &trans    &trans   &trans     &trans    &trans     &kp RSHFT
 &kp LCTRL       &kp LGUI        &kp LALT         &taptap LSHIFT TAB  &mkp MB1  &trans   &trans     &kp LALT  &kp LGUI   &kp LCTRL
@@ -73,15 +90,6 @@
 &kp LSHFT  &kp F5    &kp F6    &kp F7              &kp F8   &trans        &trans        &trans        &bt BT_CLR    &out OUT_TOG
 &kp CAPS   &kp F9    &kp F10   &kp F11             &kp F12  &trans        &trans        &trans        &trans        &trans
 &kp LCTRL  &kp LGUI  &kp LALT  &taptap LSHIFT TAB  &trans   &trans        &trans        &trans        &trans        &bootloader
-            >;
-        };
-
-        layer_4 {
-            bindings = <
-&trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans
-&trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans
-&trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans
-&trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans
             >;
         };
     };
