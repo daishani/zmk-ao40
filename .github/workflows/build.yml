@@ -1,10 +1,14 @@
-name: Build ZMK firmware
+name: Compile ZMK
 on:
   workflow_dispatch:
   push:
     paths:
-      - "config/**"
+      - "config/*.keymap"
+      - "config/*.dtsi"
+      - "config/boards/shields/*.conf"
+      - "config/boards/shields/*.overlay"
+      - "config/boards/*/*/*.keymap"
 
 jobs:
   build:
-    uses: petejohanson/zmk/.github/workflows/build-user-config.yml@core/zephyr-3.5-update
+    uses: zmkfirmware/zmk/.github/workflows/build-user-config.yml@main
