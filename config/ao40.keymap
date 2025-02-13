@@ -60,7 +60,7 @@
 
         layer_2 {
             bindings = <
-&kp ESC         &mmv MOVE_UP    &mkp MB4         &mkp MB5            &trans    &trans   &kp PG_DN  &kp UP    &kp PG_UP  &kp DEL
+&kp ESC         &mmv MOVE_UP    &mkp MB4         &mkp MB5            &tog 2    &tog 2   &kp PG_DN  &kp UP    &kp PG_UP  &kp DEL
 &mmv MOVE_LEFT  &mmv MOVE_DOWN  &mmv MOVE_RIGHT  &msc SCRL_UP        &trans    &kp END  &kp LEFT   &kp DOWN  &kp RIGHT  &kp HOME
 &kp LSHFT       &mkp MB3        &mkp MB2         &msc SCRL_DOWN      &trans    &trans   &trans     &trans    &trans     &kp RSHFT
 &kp LCTRL       &kp LGUI        &kp LALT         &taptap LSHIFT TAB  &mkp MB1  &trans   &trans     &kp LALT  &kp LGUI   &kp LCTRL
