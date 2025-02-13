@@ -37,22 +37,7 @@
         };
     };
 
-    combos {
-        compatible = "zmk,combos";
-
-        to2 {
-            bindings = <&tog 2>;
-            key-positions = <10 14>;
-            timeout-ms = <50>;
-            layers = <0>;
-        };
-
-        re0 {
-            bindings = <&tog 2>;
-            key-positions = <10 14>;
-            timeout-ms = <50>;
-        };
-    };
+    combos { compatible = "zmk,combos"; };
 
     keymap {
         compatible = "zmk,keymap";
