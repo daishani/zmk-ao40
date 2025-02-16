@@ -1,5 +1,9 @@
 #include "ao40.dtsi"
 
+&default_transform {
+	col-offset = <5>;
+};
+
 / {
 	chosen {
 		zmk,kscan = &kscan0;
@@ -22,7 +26,4 @@
                         , <&pro_micro 21 (GPIO_ACTIVE_HIGH | GPIO_PULL_DOWN)> // ROW3
                         ;
 	};
-};
-&default_transform {
-	col-offset = <5>;
 };
