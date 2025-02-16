@@ -4,7 +4,8 @@
  * SPDX-License-Identifier: MIT
  */
 
-#include "ao40_common.dtsi"     
+#include <dt-bindings/zmk/matrix_transform.h>
+
 
 / {
 	chosen {
