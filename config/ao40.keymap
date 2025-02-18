@@ -35,6 +35,18 @@
             retro-tap;
             quick-tap-ms = <180>;
         };
+
+        momotap: momotap {
+            compatible = "zmk,behavior-hold-tap";
+            label = "MOMOTAP";
+            bindings = <&mo>, <&kp>;
+
+            #binding-cells = <2>;
+            tapping-term-ms = <200>;
+            quick-tap-ms = <180>;
+            require-prior-idle-ms = <150>;
+            flavor = "tap-preferred";
+        };
     };
 
     combos {
@@ -58,10 +70,10 @@
 
         default_layer {
             bindings = <
-&lt 3 Q    &kp W     &kp E                  &kp R               &kp T        &kp Y                  &kp U        &kp I      &kp O      &kp P
-&kp A      &kp S     &kp D                  &kp F               &kp G        &kp H                  &kp J        &kp K      &kp L      &kp FSLH
-&kp Z      &kp X     &kp C                  &kp V               &kp B        &kp N                  &kp M        &kp COMMA  &kp DOT    &kp RSHFT
-&kp LCTRL  &kp LGUI  &taptap LEFT_ALT CAPS  &taptap LSHIFT TAB  &lt 1 SPACE  &holdhold 1 BACKSPACE  &lt 2 ENTER  &lt 3 DEL  &kp PG_UP  &kp PG_DN
+&momotap 3 Q  &kp W     &kp E                  &kp R               &kp T        &kp Y                  &kp U        &kp I      &kp O      &kp P
+&kp A         &kp S     &kp D                  &kp F               &kp G        &kp H                  &kp J        &kp K      &kp L      &kp FSLH
+&kp Z         &kp X     &kp C                  &kp V               &kp B        &kp N                  &kp M        &kp COMMA  &kp DOT    &kp RSHFT
+&kp LCTRL     &kp LGUI  &taptap LEFT_ALT CAPS  &taptap LSHIFT TAB  &lt 1 SPACE  &holdhold 1 BACKSPACE  &lt 2 ENTER  &lt 3 DEL  &kp PG_UP  &kp PG_DN
             >;
         };
 
@@ -76,7 +88,7 @@
 
         layer_2 {
             bindings = <
-&lt 3 ESC       &mmv MOVE_UP    &mkp MB4         &mkp MB5            &trans         &trans   &kp PG_DN  &kp UP    &kp PG_UP  &kp DEL
+&momotap 3 ESC  &mmv MOVE_UP    &mkp MB4         &mkp MB5            &trans         &trans   &kp PG_DN  &kp UP    &kp PG_UP  &kp DEL
 &mmv MOVE_LEFT  &mmv MOVE_DOWN  &mmv MOVE_RIGHT  &msc SCRL_UP        &kp ENTER      &kp END  &kp LEFT   &kp DOWN  &kp RIGHT  &kp HOME
 &trans          &mkp MB3        &mkp MB2         &msc SCRL_DOWN      &kp BACKSPACE  &trans   &trans     &trans    &trans     &kp RSHFT
 &kp LCTRL       &kp LGUI        &kp LALT         &taptap LSHIFT TAB  &mkp MB1       &trans   &trans     &kp LALT  &kp LGUI   &kp LCTRL
