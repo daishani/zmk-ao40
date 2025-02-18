@@ -104,5 +104,14 @@
 &kp LCTRL  &kp LGUI  &kp LALT  &taptap LSHIFT TAB  &kp ENTER  &trans        &trans        &trans        &ext_power EP_OFF  &ext_power EP_ON
             >;
         };
+
+        layer_4 {
+            bindings = <
+&trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans
+            >;
+        };
     };
 };
