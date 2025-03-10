@@ -54,13 +54,13 @@
         tog2 {
             bindings = <&tog 2>;
             key-positions = <13 12>;
-            timeout-ms = <50>;
+            timeout-ms = <30>;
         };
 
         r-tog2 {
             bindings = <&tog 2>;
             key-positions = <16 17>;
-            timeout-ms = <50>;
+            timeout-ms = <30>;
         };
     };
 
