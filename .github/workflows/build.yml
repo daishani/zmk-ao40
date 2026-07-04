@@ -4,6 +4,4 @@ on: [push, pull_request, workflow_dispatch]
 jobs:
   build:
     uses: zmkfirmware/zmk/.github/workflows/build-user-config.yml@v0.3.0
-    with:
-      # 开启生成 .hex 固件镜像
-      build-args: "-DCONFIG_ZMK_BUILD_HEX=y"
+ 
